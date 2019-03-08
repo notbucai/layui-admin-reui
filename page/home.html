@@ -1,0 +1,195 @@
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space10">
+    <div class="layui-col-md8">
+
+      <div class="layui-row layui-col-space10">
+        <div class="layui-col-md6 ">
+          <div class="layui-card">
+            <div class="layui-card-header">快捷方式</div>
+            <div class="layui-card-body">
+              <div carousel-item="">
+                <ul class="layui-row layui-col-space10 layui-this">
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-console"></i>
+                      <cite>主页一</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-chart"></i>
+                      <cite>主页二</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-template-1"></i>
+                      <cite>弹层</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-chat"></i>
+                      <cite>聊天</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-find-fill"></i>
+                      <cite>进度条</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-survey"></i>
+                      <cite>工单</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-user"></i>
+                      <cite>用户</cite>
+                    </a>
+                  </li>
+                  <li class="layui-col-xs3">
+                    <a class="home-convenience-item">
+                      <i class="layui-icon layui-icon-set"></i>
+                      <cite>设置</cite>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layui-col-md6">
+          <div class="layui-card">
+            <div class="layui-card-header">待办事件</div>
+            <div class="layui-card-body">
+
+              <ul class="layui-row layui-col-space10">
+                <li class="layui-col-xs6">
+                  <a class="home-backlog-item">
+                    <span>待审评论</span>
+                    <p>123</p>
+                  </a>
+                </li>
+                <li class="layui-col-xs6">
+                  <a class="home-backlog-item">
+                    <span>待审评论</span>
+                    <p>3344</p>
+                  </a>
+                </li>
+                <li class="layui-col-xs6">
+                  <a class="home-backlog-item">
+                    <span>待审评论</span>
+                    <p>76</p>
+                  </a>
+                </li>
+                <li class="layui-col-xs6">
+                  <a class="home-backlog-item">
+                    <span>待审评论</span>
+                    <p>9</p>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layui-row layui-col-space10">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">图表信息</div>
+            <div class="layui-card-body home-chart" height="400px">
+              <canvas id="ChartHome" height="340" width="0"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layui-col-md4">
+
+      <div class="layui-row layui-col-space10">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">版本信息</div>
+            <div class="layui-card-body">
+              <table class="layui-table">
+                <colgroup>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>当前版本</td>
+                    <td>v1.0</td>
+                  </tr>
+                  <tr>
+                    <td>基于框架</td>
+                    <td>layui</td>
+                  </tr>
+                  <tr>
+                    <td>主要特色</td>
+                    <td>没有特色</td>
+                  </tr>
+                  <tr>
+                    <td>获取渠道</td>
+                    <td>
+                      <a href="http://github.com/wuxinweb" target="_blank" class="layui-btn">github</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="layui-row layui-col-space10">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">效果报告</div>
+            <div class="layui-card-body">
+              <div class="layui-progress" lay-showpercent="yes">
+                <h3>转化率（日同比 28% <span class="layui-edge layui-edge-top" lay-tips="增长" lay-offset="-15"></span>）</h3>
+                <div class="layui-progress-bar" lay-percent="65%" style="width: 65%;"><span
+                    class="layui-progress-text">65%</span></div>
+              </div>
+              <div class="layui-progress" lay-showpercent="yes">
+                <h3>转化率（日同比 2% <span class="layui-edge layui-edge-top" lay-tips="增长" lay-offset="-15"></span>）</h3>
+                <div class="layui-progress-bar" lay-percent="25%" style="width: 25%;"><span
+                    class="layui-progress-text">25%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layui-row layui-col-space10">
+        <div class="layui-col-md12">
+          <div class="layui-card">
+            <div class="layui-card-header">实时监控</div>
+            <div class="layui-card-body">
+              <div class="layui-progress" lay-showpercent="yes">
+                <h3>CPU使用率</h3>
+                <div class="layui-progress-bar" lay-percent="65%" style="width: 65%;"><span
+                    class="layui-progress-text">65%</span></div>
+              </div>
+              <div class="layui-progress" lay-showpercent="yes">
+                <h3>内存使用率</h3>
+                <div class="layui-progress-bar layui-bg-red" lay-percent="90%" style="width: 90%;"><span
+                    class="layui-progress-text">90%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

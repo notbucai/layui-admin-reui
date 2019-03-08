@@ -1,0 +1,61 @@
+<!-- 导航栏 -->
+<div class="page-breadcrumb">
+  <span class="layui-breadcrumb">
+    <a href="/#home">主页</a>
+    <a><cite>用户管理</cite></a>
+  </span>
+</div>
+<!-- 主要内容 -->
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space10">
+
+    <div class="layui-card">
+      <div class="layui-card-header article-card">
+        <form action="#" method="post" class="layui-form">
+          <div class="layui-form-item">
+
+            <div class="layui-inline">
+              <label class="layui-form-label">用户名</label>
+              <div class="layui-input-inline">
+                <input type="text" name="name" placeholder="请输入用户名" class="layui-input">
+              </div>
+            </div>
+
+            <div class="layui-inline">
+              <button class="layui-btn" lay-submit lay-filter="selectForm"><i class="iconfont iconsousuo"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="layui-card-body">
+        <table id="articleTable" lay-filter="test"></table>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/html" id="barArticle">
+
+  <a class="layui-btn layui-btn-xs" href="#user/edit?id={{ d._id }}">编辑</a>
+  <a class="layui-btn layui-btn-xs" lay-event="setAdmin">取消/设置管理</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<script type="text/html" id="openTpl">
+  <div class="page-add">
+    <form action="" method="post" class="layui-form">
+        <input type="hidden" name="id" value="{{d._id||''}}">
+        <div class="layui-form-item">
+            <input type="text" name="name" class="layui-input" lay-verify="required" placeholder="请输入栏目名" value="{{d.u_name||''}}">
+        </div>
+        <div class="layui-form-item">
+            <input type="text" name="title" placeholder="请输入栏目标题" lay-verify="required" class="layui-input" value="{{d.title||''}}">
+        </div>
+        <div class="layui-form-item">
+              <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="SubmitPage">提交</button>
+          </div>
+    </form>
+  </div>
+</script>

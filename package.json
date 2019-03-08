@@ -1,0 +1,17 @@
+{
+  "name": "layui_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "layui-src": "^2.4.5",
+    "simditor": "^2.3.23"
+  }
+}

@@ -1,0 +1,54 @@
+<!-- 导航栏 -->
+<div class="page-breadcrumb">
+  <span class="layui-breadcrumb">
+    <a href="/#home">主页</a>
+    <a><cite>友链管理</cite></a>
+  </span>
+</div>
+<!-- 主要内容 -->
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space10">
+
+    <div class="layui-card">
+      <div class="layui-card-header">
+        友链管理
+      </div>
+      <div class="layui-card-body">
+        <button class="layui-btn" id="addPage">添加友链</button>
+        <table id="articleTable" lay-filter="test"></table>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/html" id="barArticle">
+    {{#  if(!d.is_audit){ }}
+    <a class="layui-btn layui-btn-xs" lay-event="edit">修改</a>
+    {{#  } }}
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+  </script>
+
+<script type="text/html" id="openTpl">
+    <div class="page-add">
+      <form action="" method="post" class="layui-form">
+          <input type="hidden" name="_id" value="{{d._id||''}}">
+          <div class="layui-form-item">
+            <input type="text" name="title" class="layui-input" lay-verify="required" placeholder="请输入友链名" value="{{d.title||''}}">
+          </div>
+          <div class="layui-form-item">
+            <input type="text" name="info" placeholder="请输入友链信息" lay-verify="required" class="layui-input" value="{{d.info||''}}">
+          </div>
+          <div class="layui-form-item">
+            <input type="text" name="link" placeholder="请输入友链连接" lay-verify="required" class="layui-input" value="{{d.link||''}}">
+          </div>
+          <div class="layui-form-item">
+            <input type="text" name="l_img" placeholder="请输入友链图片" lay-verify="required" class="layui-input" value="{{d.l_img||''}}">
+          </div>
+          <div class="layui-form-item">
+            <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="SubmitPage">提交</button>
+          </div>
+      </form>
+    </div>
+  </script>

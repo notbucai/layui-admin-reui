@@ -1,0 +1,61 @@
+<!-- 导航栏 -->
+<div class="page-breadcrumb">
+  <span class="layui-breadcrumb">
+    <a href="/#home">主页</a>
+    <a href="/#user">用户管理</a>
+    <a><cite>用户编辑</cite></a>
+  </span>
+</div>
+
+<!-- 主要内容 -->
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space10">
+
+    <div class="layui-card">
+      <div class="layui-card-header article-card">
+        编辑用户
+      </div>
+      <div class="layui-card-body">
+
+        <form action="" class="layui-form">
+          <input type="hidden" name="_id" class="layui-input">
+          <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+              <input type="text" name="u_name" class="layui-input" placeholder="请输入用户名">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">邮箱</label>
+            <div class="layui-input-block">
+              <input type="text" name="u_email" class="layui-input" placeholder="请输入邮箱">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+              <input type="text" name="u_pwd" class="layui-input" placeholder="如需要更新请输入密码，不更新请不要输入" autocomplete="off">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button class="layui-btn" lay-submit lay-filter="submitUser">提 交</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/html" id="barArticle">
+  <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-xs" href="#/article/add?id={{d._id}}">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+  
+  <!-- 这里同样支持 laytpl 语法，如：
+  {{#  if(d.auth > 2){ }}
+    <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
+  {{#  } }} -->
+</script>

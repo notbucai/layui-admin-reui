@@ -1,0 +1,31 @@
+body{
+  background-image: linear-gradient(90deg, #00e2ff 0%, #009efd 100%);
+}
+#login{
+  width: 300px;
+  min-height: 320px;
+  margin: 200px auto 0;
+  box-sizing: border-box;
+
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #fff6;
+}
+
+.login-form{
+
+}
+.login-logo{
+  text-align: center;
+  margin: 20px auto 30px;
+}
+.login-logo img{
+  max-width: 60%;
+  max-height: 60px;
+}
+.login-copy{
+  text-align: center;
+  color:#ccc;
+  font-size: 12px;
+}

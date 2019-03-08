@@ -1,0 +1,66 @@
+<!-- 导航栏 -->
+<div class="page-breadcrumb">
+  <span class="layui-breadcrumb">
+    <a href="/#home">主页</a>
+    <a><cite>评论管理</cite></a>
+  </span>
+</div>
+<!-- 主要内容 -->
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space10">
+
+    <div class="layui-card">
+      <div class="layui-card-header article-card">
+        <form action="#" method="post" class="layui-form">
+          <div class="layui-form-item">
+
+            <div class="layui-inline">
+              <label class="layui-form-label">用户ID</label>
+              <div class="layui-input-inline">
+                <input type="text" name="u_id" placeholder="请输入ID" class="layui-input">
+              </div>
+            </div>
+
+            <div class="layui-inline">
+              <label class="layui-form-label">文章ID</label>
+              <div class="layui-input-inline">
+                <input type="text" name="a_id" class="layui-input" placeholder="请输入ID">
+              </div>
+            </div>
+
+            <div class="layui-inline">
+              <label class="layui-form-label">范围</label>
+              <div class="layui-input-inline">
+                <select name="scope" lay-verify="">
+                  <option value="">请选择范围</option>
+                  <option value="1">已审核</option>
+                  <option value="0">未审核</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="layui-inline">
+              <button class="layui-btn" lay-submit lay-filter="selecForm"><i class="iconfont iconsousuo"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="layui-card-body">
+        <table id="articleTable" lay-filter="test"></table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/html" id="barArticle">
+    {{#  if(!d.is_scope){ }}
+    <a class="layui-btn layui-btn-xs" lay-event="audit">审核</a>
+    {{#  } }}
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+
+    <!-- 这里同样支持 laytpl 语法，如：
+    {{#  if(d.auth > 2){ }}
+      <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
+    {{#  } }} -->
+  </script>

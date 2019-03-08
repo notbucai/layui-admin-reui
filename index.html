@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>后台管理系统</title>
+  <link rel="stylesheet" href="/common/layui/css/layui.css">
+  <link rel="stylesheet" href="/common/css/index.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1057523_8bpo4it75zi.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/simditor/styles/simditor.css" />
+</head>
+
+<body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">Admin</div>
+      <!-- 头部区域（可配合layui已有的水平导航） -->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item">
+          <a href="#home"><i class="iconfont iconjiaobenkongzhitai"></i></a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="/"><i class="iconfont iconwangluo"></i></a>
+        </li>
+        <li class="layui-nav-item">
+          <a id="reload"><i class="iconfont iconicon14"></i></a>
+        </li>
+      </ul>
+
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+          <a href=""><i class="iconfont iconxiaoxi"></i><span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+          <a href=""><i class="iconfont iconbianqian"></i></a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;" id="c_user">
+            <img src="http://q1.qlogo.cn/g?b=qq&nk=1450941858&s=100" class="layui-nav-img">
+            <span>bucai</span>
+          </a>
+        </li>
+        <li class="layui-nav-item" id="logout"><a href="">退了</a></li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-admin" lay-filter="nav_left">
+      <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree layui-bg-admin " lay-filter="test">
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="#home"><i class="iconfont iconjiaobenkongzhitai"></i> 主页</a>
+          </li>
+          <li class="layui-nav-item"><a href="#article"><i class="iconfont iconwenzhang"></i> 文章管理</a></li>
+          <li class="layui-nav-item"><a href="#comment"><i class="iconfont iconpinglun"></i> 评论管理</a></li>
+          <li class="layui-nav-item"><a href="#part"><i class="iconfont iconlanmu"></i> 栏目管理</a></li>
+          <li class="layui-nav-item"><a href="#user"><i class="iconfont iconshiliangzhinengduixiang"></i> 用户管理</a></li>
+          <li class="layui-nav-item"><a href="#link"><i class="iconfont iconyouqinglianjie"></i> 友联管理</a></li>
+          <li class="layui-nav-item"><a href="#setting"><i class="iconfont iconxitong"></i> 系统管理</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body">
+      <!-- 内容主体区域 -->
+      <div id="context">内容主体区域</div>
+    </div>
+
+    <div class="layui-footer">
+      <!-- 底部固定区域 -->
+      © ncgame.com - 不才
+    </div>
+
+  </div>
+  <script src="/common/layui/layui.js"></script>
+  <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="/common/js/config.js"></script>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
