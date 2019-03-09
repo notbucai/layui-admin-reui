@@ -11,5 +11,5 @@ layui.config({
 const runEnv = "blog";
 
 const $config = {
-  apiContext: runEnv == 'dev' ? 'http://easy-mock.ncgame.cc/mock/5c7281fbf274710a8d216195/layuiAdminDemo/' : 'http://127.0.0.1:3188/'
+  apiContext: runEnv == 'dev' ? 'http://easy-mock.ncgame.cc/mock/5c7281fbf274710a8d216195/layuiAdminDemo/' : 'http://blog.ncgame.cc/'
 }
