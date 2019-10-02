@@ -62,6 +62,10 @@ body {
   background-image: linear-gradient(to left, #d9ebff 0%, #ffffff 80%);
 }
 
+.content-con{
+  height: 500px;
+}
+
 #context {
   padding-top: 15px;
 }

@@ -8,8 +8,9 @@ layui.config({
   '$tool': 'tool',
 });
 
-const runEnv = "blog";
+// const runEnv = "blog";
+const runEnv = "dev";
 
 const $config = {
-  apiContext: runEnv == 'dev' ? 'http://easy-mock.ncgame.cc/mock/5c7281fbf274710a8d216195/layuiAdminDemo/' : 'http://blog.ncgame.cc/'
+  apiContext: runEnv == 'dev' ? 'http://localhost:3188/' : 'http://blog.ncgame.cc/'
 }

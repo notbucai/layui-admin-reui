@@ -34,7 +34,7 @@ layui.use(['element', 'jquery', 'form', '$tool', 'layer', '$api', 'upload', 'lay
       $("#title").val(title);
       $("#info").val(info);
       RenderHeadImg(a_img);
-      $("#content").val(content);
+      $("#content textarea[name=content]").val(content);
 
       uploadFun();
       initEdit();
@@ -105,8 +105,14 @@ layui.use(['element', 'jquery', 'form', '$tool', 'layer', '$api', 'upload', 'lay
    * 初始化编辑器
    */
   function initEdit() {
-    var editor = new Simditor({
-      textarea: $('#content')
+    // var editor = new Simditor({
+    //   textarea: $('#content')
+
+    // });
+    var editor = editormd("content", {
+      // width  : "100%",
+      // height : "100%",
+      path: "/common/editormd/lib/"
     });
   }
 

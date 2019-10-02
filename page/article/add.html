@@ -51,8 +51,11 @@
 
           <div class="layui-form-item">
             <label class="layui-form-label">文章内容</label>
-            <div class="layui-input-block">
-              <textarea id="content" name="content" lay-verify="required" placeholder="Balabala" autofocus></textarea>
+            <div class="layui-input-block content-con">
+              <div id="content">
+                <textarea name="content" lay-verify="required" style="display:none;" placeholder="Balabala" autofocus></textarea>
+              </div>
+              <!-- <textarea id="content" name="content" lay-verify="required" placeholder="Balabala" autofocus></textarea> -->
             </div>
           </div>
           <div class="layui-form-item">
@@ -88,4 +91,4 @@
 <script src="/common/js/module.js"></script>
 <script src="/common/js/uploader.js"></script>
 <script src="/common/js/hotkeys.js"></script>
-<script src="/common/js/simditor.js"></script>
+<script src="/common/js/editormd.min.js"></script>
