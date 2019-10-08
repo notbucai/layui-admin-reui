@@ -22,7 +22,7 @@ layui.define(['jquery', 'layer'], function (exports) {
         //拦截错误返回
         error: function (xhr, textStatus, errorThrown) {
           if (xhr.status === 401) {
-            window.location.href = "/page/system/401.html";
+            window.location.href = "/login.html";
             return;
           } else if (xhr.status === 403) {
             //清空session
