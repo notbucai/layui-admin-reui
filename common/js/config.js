@@ -8,9 +8,9 @@ layui.config({
   '$tool': 'tool',
 });
 
-// const runEnv = "blog";
-const runEnv = "dev";
+const runEnv = "blog";
+// const runEnv = "dev";
 
 const $config = {
-  apiContext: runEnv == 'dev' ? 'http://localhost:3188/' : 'http://blog.ncgame.cc/'
+  apiContext: runEnv == 'dev' ? 'http://localhost:3188/' : 'https://blog.ncgame.cc/'
 }
